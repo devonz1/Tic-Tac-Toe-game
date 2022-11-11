@@ -1,0 +1,25 @@
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid; /*ths will assign the size of each box to each cell
+    and a solid border around each box so they can be visible.*/
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer; /*this element shows the pointer so you can 
+    click on each box*/
+}
+#gameContainer{
+    font-family: "Permanent Marker" , cursive;
+    text-align : center;
+}
+
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3 , auto);/* this element will target our
+    cell container which holds each box in the in the cell and breaks them up in
+    3 seperate columns */
+    width: 225px;
+    margin: auto;
+}
