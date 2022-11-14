@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel = "stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-    <div id ="gameContainer">
-      <h1>Tic Tac Toe</h1>
-       <div id = "cellContainer">
-        <div cellindex = "0" class="cell"></div>
-        <div cellindex = "1" class="cell"></div>
-        <div cellindex = "2" class="cell"></div>
-        <div cellindex = "3" class="cell"></div>
-        <div cellindex = "4" class="cell"></div>
-        <div cellindex = "5" class="cell"></div>
-        <div cellindex = "6" class="cell"></div>
-        <div cellindex = "7" class="cell"></div>
-        <div cellindex = "8" class="cell"></div>
-         
+</head>
+
+<body id="color">
+
+    <div id="gameContainer">
+        <h1 class="col2">Tic Tac Toe</h1>
+        <div id="cellContainer">
+            <div cellindex="0" class="cell"></div>
+            <div cellindex="1" class="cell"></div>
+            <div cellindex="2" class="cell"></div>
+            <div cellindex="3" class="cell"></div>
+            <div cellindex="4" class="cell"></div>
+            <div cellindex="5" class="cell"></div>
+            <div cellindex="6" class="cell"></div>
+            <div cellindex="7" class="cell"></div>
+            <div cellindex="8" class="cell"></div>
+
         </div>
-        <h2 id="status">   </h2>
-        <button id ="restartBtn">Restart </button>
-       </div>
+        <h2 id="statusText" class="col2 btn btn-dark btn btn-primary btn-lg"   > </h2>
+        <button id="restartBtn">Restart </button>
+    </div>
 
     </div>
+
     <script src="game.js"></script>
 </body>
+
 </html>

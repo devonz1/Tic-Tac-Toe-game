@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/devonz1/Tic-Tac-Toe-game/issues"
   },
-  "homepage": "https://github.com/devonz1/Tic-Tac-Toe-game#readme"
+  "homepage": "https://github.com/devonz1/Tic-Tac-Toe-game#readme",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
 }
