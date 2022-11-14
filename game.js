@@ -11,7 +11,7 @@ const winConditions = [
     [0, 3, 6],
     [1, 4, 7],/*<these will be the indexes for the boxes in each column*/
     [2, 5, 8],
-    [0, 4, 8],/*these are for the diagnol boxes index*/
+    [0, 4, 8],/*these are for the diagonal boxes index*/
     [2, 4, 6]
 ];
 
@@ -25,7 +25,10 @@ function initializeGame() {
     cells.forEach(cell => cell.addEventListener("click", cellClicked));
     restartBtn.addEventListener("click", restartGame);
     statusText.textContent = `${currentPlayer}'s turn`;
-    running = true;
+    running = true;  /*this function will start the game  for each cell
+    that is clicked in the grid it will show X or O the restart button eventlistener
+    will restart the game once button is clicked and it will let the users know whos turn
+    it is */
 }
 
 function cellClicked() {
@@ -41,7 +44,9 @@ function cellClicked() {
 }
 function updateCell(cell, index) {
     options[index] = currentPlayer;
-    cell.textContent = currentPlayer;
+    cell.textContent = currentPlayer; /* fro each cell clicked this function
+    will update the game and let the users know whos turn it is based on
+    if x clicks a cell or O.
 
 }
 
@@ -82,7 +87,7 @@ statusText.textContent = `${currentPlayer} wins!`;
    }
    else if(!options.includes("")){
      statusText.textContent = `Draw!`
-     runnig = false;
+     running = false;
    }
    else{
     changePlayer();
